@@ -1,0 +1,90 @@
+.dialog {
+    background-color: #17212B;
+    max-height: 60px;
+    min-height: 60px;
+    user-select: none;
+}
+
+.dialog a:focus {
+    background-color: #2B5278;
+}
+.dialog:hover {
+    background-color: #212B35;
+    cursor: pointer;
+}
+
+.dialog a {
+    text-decoration: none;
+    color: white;
+    max-height: 60px;
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+}
+
+.image img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    pointer-events: none;
+    user-select: none;
+    margin: 6px auto;
+}
+
+.textSection {
+    padding-left: 10px;
+    padding-top: 5px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.lastMessage {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    font-size: 12px;
+    font-family: 'Source Sans Pro', sans-serif;
+    max-width: 200px;
+}
+
+.sender {
+    color: #65B9F5;
+    margin-right: 4px;
+}
+
+.senderMessageText {
+    color: #7F9191;
+    max-height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;    
+    width: max-content;
+    max-width: 180px;
+}
+
+.lastMessage:nth-child(2) {
+    max-width: 250px;
+}
+
+.time {
+    color: #8696A8;
+    font-family: 'opensans';
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.name {
+    font-family: 'Spot Mono', monospace;
+    letter-spacing: -0.8px;
+}
+
+.firstSection {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}

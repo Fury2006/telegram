@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'opensans';
+    font-style: normal;
+    font-weight: 500;
+    src: local('opensans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
+.search {
+    overflow: hidden;
+}
+
+.search {
+    background-color: #242F3D;
+    width:90%;
+    letter-spacing: 0.4px;
+    height: 34px;
+    border-radius: 3px;
+    margin: 0 0 0 10px;
+    padding: 2px 0 3px 12px;
+    font-family: 'opensans';
+    font-size: 12px;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.search:hover {
+    cursor: text;
+}
+
+.search::placeholder {
+    transition: color 2s;
+    color:#6D7883;
+    user-select: none;
+}
+
+.search:focus::placeholder{
+    transition: color 0.5s;
+    color:#46505E;
+}
+
+.content {
+    padding: 10px 0 0 0;
+    background-color: #17212B;
+    height: 100vh;
+    border-right: 0.5px solid #0A121B;
+    min-width: 235px;
+}
+
+.image img {
+    width: 30px;
+    margin: 2px 0 0 20px;
+    pointer-events: none;
+    user-select: none;
+}
+
+.image {
+    display: inline-block;
+}
+
+.searchContainer {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    height: 54px;
+    width: 100%;
+}
+
+.formContainer {
+    display: inline-block;
+}

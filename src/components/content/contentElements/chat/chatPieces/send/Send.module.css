@@ -1,0 +1,47 @@
+.input {
+    background-color: #17212B;
+    height: 100%;
+    resize: none;
+    outline: none;
+    color: white;
+    border: none;
+    font-size: 13px;
+    padding: 2px 0 0 10px;
+    width: 100%;
+}
+
+.input::placeholder {
+    transition: color 0.5s;
+    color: #6D7883;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    user-select: none;
+}
+
+.input:focus::placeholder {
+    transition: color 0.5s;
+    color:#46505E;
+}
+
+.send {
+    background-color: #17212B;
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 100%;
+    outline: none;
+}
+
+.sendButton {
+    padding: 7px 0 0 0;
+    height: 40px;
+    background-color: #17212B;
+    padding: 0 4px 0 0;
+}
+
+.sendButton img {
+    user-select: none;
+    height: 40px;
+    cursor: pointer;
+    margin: 0 0 0 auto;
+}
